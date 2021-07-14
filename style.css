@@ -71,7 +71,7 @@ section one style area
   color: white;
 }
 .sectionone-banner {
-  width: 556.01px;
+  width: 554px;
   height: 438px;
   transition: transform 2s ease;
 }
@@ -311,7 +311,7 @@ style for media
   }
 }
 
-@media only screen and (min-width: 688px) and (max-width:992px) {
+@media only screen and (min-width: 688px) and (max-width: 992px) {
   body {
     margin: 0px;
     overflow-x: hidden;
