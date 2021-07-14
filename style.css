@@ -1,0 +1,246 @@
+/*..........................
+ common style area 
+ ............................*/
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0px;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+main {
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  
+}
+
+
+
+/* .................
+section one style area
+......................... */
+
+.section-one {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: #2d25a0;
+  
+  width: 1440px;
+  height: 677px;
+  align-items: center;
+}
+.sectionone-header h1 {
+  font-size: 64px;
+  color: white;
+  margin-bottom: 27px;
+  margin-left: 50px;
+}
+.section-one:hover .sectionone-header h1 {
+  animation-name: example;
+  animation-duration: 10s;
+  animation-timing-function: ease;
+}
+@keyframes example {
+  10% {
+    color: #fdcb6e;
+  }
+  10% {
+    color: #8e44ad;
+  }
+  10% {
+    color: #74b9ff;
+  }
+  10% {
+    color: #e02c6d;
+  }
+}
+.anchor {
+  margin-left: 50px;
+  text-decoration: none;
+  color: white;
+  width: 168px;
+  height: 44px;
+  background-color: #e02c6d;
+  padding: 10px 36px 10px 24px;
+  
+}
+.anchor:hover{
+    color: black;
+}
+
+
+.anchor i {
+  margin-left: 8px;
+  color: white;
+}
+.sectionone-banner img {
+  width: 556.01px;
+  height: 438px;
+  transition: transform 2s ease;
+}
+.sectionone-banner img:hover {
+  transform: rotate(30deg);
+}
+
+/*...................
+ section two style area
+ ......................... */
+
+.section-two {
+  background-color: white;
+}
+
+.top-players {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-row-gap: 27px;
+  grid-column-gap: 30px;
+  
+  margin-top: 70px;
+  margin-bottom: 165px;
+}
+.player {
+  width: 330px;
+  height: 480px;
+  
+  padding-bottom: 33px;
+
+  border: 1px solid white;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.player img {
+  width: 300px;
+  height: 256px;
+
+  padding: 15px;
+}
+.player img:hover {
+  opacity: 0.5;
+}
+.player h2 {
+  font-size: 28px;
+  margin-top: 0px;
+  margin-bottom: 10px;
+  padding: 0px 15px;
+}
+.player p {
+  font-size: 16px;
+  color: #6c6c6c;
+  padding: 0px 15px;
+}
+.player p:hover {
+  color: tomato;
+}
+
+/* ...................
+highlights section style area 
+............................*/
+
+
+
+.highlights {
+  display: flex;
+  
+  align-items: center;
+  margin-bottom: 158px;
+}
+.highlights img {
+  width: 567px;
+  height: 427px;
+}
+.news {
+  width: 469px;
+  height: 309px;
+  border: 1px solid white;
+  margin-right: 66px;
+}
+.news h1 {
+  font-size: 48px;
+  margin-top: 0px;
+  margin-bottom: 8px;
+}
+.news p {
+  font-size: 16px;
+  color: #6c6c6c;
+  margin-bottom: 24px;
+}
+
+
+/* ............................
+section four style area
+............................... */
+.event{
+    margin-bottom: 68px;
+    
+}
+
+
+.date{
+    display: flex;
+    justify-content: space-between;
+}
+.time{
+    line-height: 1px;
+    margin-right: 25px;
+}
+.time h4{
+    color: red;
+}
+.topic span{
+    color: red;
+}
+.topic a{
+    text-decoration: none;
+    text-align: center;
+    margin-left: 59px;
+}
+
+
+/* .........................
+section five style area
+........................... */
+.ticket{
+    width: 540px;
+    height: 100px;
+    border: 1px solid;
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 20%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    
+
+}
+
+
+
+
+/* ............................
+footer section style area 
+..............................*/
+
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+.logo img {
+  width: 483.87px;
+  height: 110px;
+  margin-bottom: 20px;
+}
+.icon i {
+  margin-right: 14px;
+  /* margin-bottom: 2px; */
+}
+.copyr8 {
+  margin-top: 0px;
+  font-size: 18px;
+  
+}
+
