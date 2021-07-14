@@ -12,10 +12,7 @@ main {
   flex-direction: column;
 
   align-items: center;
-  
 }
-
-
 
 /* .................
 section one style area
@@ -25,18 +22,19 @@ section one style area
   display: flex;
   justify-content: space-evenly;
   background-color: #2d25a0;
-  
+
   width: 1440px;
   height: 677px;
   align-items: center;
 }
-.sectionone-header h1 {
+
+.sectionone-header {
   font-size: 64px;
   color: white;
   margin-bottom: 27px;
   margin-left: 50px;
 }
-.section-one:hover .sectionone-header h1 {
+.section-one:hover .sectionone-header {
   animation-name: example;
   animation-duration: 10s;
   animation-timing-function: ease;
@@ -63,23 +61,21 @@ section one style area
   height: 44px;
   background-color: #e02c6d;
   padding: 10px 36px 10px 24px;
-  
 }
-.anchor:hover{
-    color: black;
+.anchor:hover {
+  color: black;
 }
-
 
 .anchor i {
   margin-left: 8px;
   color: white;
 }
-.sectionone-banner img {
+.sectionone-banner {
   width: 556.01px;
   height: 438px;
   transition: transform 2s ease;
 }
-.section-one:hover .sectionone-banner img {
+.section-one:hover .sectionone-banner {
   transform: rotate(30deg);
 }
 
@@ -96,14 +92,14 @@ section one style area
   grid-template-columns: repeat(3, 1fr);
   grid-row-gap: 27px;
   grid-column-gap: 30px;
-  
+
   margin-top: 70px;
   margin-bottom: 165px;
 }
 .player {
   width: 330px;
   height: 480px;
-  
+
   padding-bottom: 33px;
 
   border: 1px solid white;
@@ -138,11 +134,9 @@ section one style area
 highlights section style area 
 ............................*/
 
-
-
 .highlights {
   display: flex;
-  
+
   align-items: center;
   margin-bottom: 158px;
 }
@@ -167,68 +161,58 @@ highlights section style area
   margin-bottom: 24px;
 }
 
-
 /* ............................
 section four style area
 ............................... */
-.event{
-    margin-bottom: 68px;
-    
+.event {
+  margin-bottom: 68px;
 }
 
-
-.date{
-    display: flex;
-    justify-content: space-between;
+.date {
+  display: flex;
+  justify-content: space-between;
 }
-.time{
-    line-height: 1px;
-    margin-right: 25px;
+.time {
+  line-height: 1px;
+  margin-right: 25px;
 }
-.time h4{
-    color: red;
+.time h4 {
+  color: red;
 }
-.topic span{
-    color: red;
+.topic span {
+  color: red;
 }
-.topic a{
-    text-decoration: none;
-    text-align: center;
-    margin-left: 59px;
+.topic a {
+  text-decoration: none;
+  text-align: center;
+  margin-left: 59px;
 }
-
 
 /* .........................
 section five style area
 ........................... */
-.ticket{
-    width: 540px;
-    height: 100px;
-    border: 1px solid;
-    border-radius: 10px;
-    padding: 20px;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    margin-bottom: 20%;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    
-
+.ticket {
+  width: 540px;
+  height: 100px;
+  border: 1px solid;
+  border-radius: 10px;
+  padding: 20px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-bottom: 20%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-
-
-
 
 /* ............................
 footer section style area 
 ..............................*/
 
-
 .footer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 .logo img {
   width: 483.87px;
   height: 110px;
@@ -241,10 +225,168 @@ footer section style area
 .copyr8 {
   margin-top: 0px;
   font-size: 18px;
-  
 }
 
+/* ........................
+style for media 
+..............................*/
 
+@media only screen and (max-width: 688px) {
+  body {
+    margin: 0px;
+    overflow-x: hidden;
+  }
+  .section-one {
+    width: 170%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50%;
+    justify-content: center;
+  }
+  .sectionone-header {
+    margin-left: 29%;
+  }
+  .anchor {
+    margin-left: 29%;
+    /* margin-bottom: 40%; */
+  }
+  .sectionone-banner {
+    margin-left: 30%;
+    margin-top: 20%;
+  }
+  .top-players {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    align-items: center;
+    justify-content: center;
+    margin-left: 70%;
+    /* margin-right: 0px; */
+  }
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .highlights {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .news {
+    margin-left: 50%;
+  }
+  .highlights img {
+    margin-left: 35%;
+    margin-top: 20%;
+  }
+  .date {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .event {
+    margin-left: 50%;
+    width: 100%;
+  }
 
+  .ticket {
+    display: flex;
+    flex-direction: column;
+    margin-left: 50%;
+    width: 100%;
+  }
+  .ticket p {
+    margin-right: 90px;
+  }
+  .footer {
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    margin-left: 40%;
+    width: 100%;
+  }
+}
 
-style for media
+@media only screen and (min-width: 688px) and (max-width:992px) {
+  body {
+    margin: 0px;
+    overflow-x: hidden;
+  }
+  .section-one {
+    width: 170%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50%;
+    justify-content: center;
+  }
+  .sectionone-header {
+    margin-left: 29%;
+  }
+  .anchor {
+    margin-left: 29%;
+    /* margin-bottom: 40%; */
+  }
+  .sectionone-banner {
+    margin-left: 30%;
+    margin-top: 20%;
+  }
+  .top-players {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    justify-content: center;
+    margin-left: 70%;
+    /* margin-right: 0px; */
+  }
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .highlights {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .news {
+    margin-left: 50%;
+  }
+  .highlights img {
+    margin-left: 35%;
+    margin-top: 20%;
+  }
+  .date {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .event {
+    margin-left: 50%;
+    width: 100%;
+  }
+
+  .ticket {
+    display: flex;
+    flex-direction: column;
+    margin-left: 50%;
+    width: 100%;
+  }
+  .ticket p {
+    margin-right: 90px;
+  }
+  .footer {
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    margin-left: 40%;
+    width: 100%;
+  }
+}
