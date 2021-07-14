@@ -79,7 +79,7 @@ section one style area
   height: 438px;
   transition: transform 2s ease;
 }
-.sectionone-banner img:hover {
+.section-one:hover .sectionone-banner img {
   transform: rotate(30deg);
 }
 
@@ -244,3 +244,7 @@ footer section style area
   
 }
 
+
+
+
+style for media
